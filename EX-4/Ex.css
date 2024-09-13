@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px 100px 200px 100px;
+    grid-template-areas:
+    "header header header"
+    "navigation navigation navigation"
+    "search main main"
+    "rela comment comment"
+    "footer footer footer";
+    gap: 10px;
+}
+.grid-container > div{
+    padding: 10px;
+}
+.header{
+    grid-area: header;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+.navigation{
+    grid-area: navigation;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+.sidebar-left{
+    background: #ccc;
+    height: 60vh;
+}
+.search{
+    grid-area: search;
+    background: #ddd;
+    height: 30vh;
+    margin: 5px;
+}   
+.rela{
+    grid-area: rela;
+    background: #ddd;
+    height: 25vh;
+    margin: 5px;
+    margin-top: 10px;
+}
+.main{
+    grid-area: main;
+    background: #ddd;
+}
+.comment{
+    grid-area: comment;
+    background: #ccc;
+    margin-top: -10px;
+}
+.footer{
+    grid-area: footer;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}

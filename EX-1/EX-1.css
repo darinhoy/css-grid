@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.grid-contianer{
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-areas:
+    "blog-header blog-header blog-header"
+    "sidebar article-1 related-posts"
+    "sidebar article-2 related-posts"
+    "sidebar article-3 related-posts"
+    "footer footer footer";
+    /* row-gap: 10px; */
+
+}
+.grid-contianer > div{
+    padding: 20px;
+}
+.blog-header{
+    grid-area: blog-header;
+    background: #333;
+    color: white;
+}
+.siderbar{
+    grid-area: sidebar;
+    background: #ddd;
+}
+.related-posts{
+    grid-area: related-posts;
+    background: #ddd;
+}
+.article-1{
+    grid-area: article-1;
+    background: #fff;
+    height: 15vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.article-2{
+    grid-area: article-2;
+    margin-top: 15px;
+    background: #fff;
+    height: 15vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.article-3{
+    grid-area: article-3;
+    margin-top: 15px;
+    background: #fff;
+    height: 15vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.footer{
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+}

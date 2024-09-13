@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-rows: 50px 200px 100px 150px;
+    grid-template-areas:
+    "header header header"
+    "navi main sidebar"
+    "navi main sidebar"
+    "navi addtino sidebar"
+    "footer footer footer";
+}
+.container > div {
+    padding: 15px;
+}
+.header{
+    grid-area: header;
+    background: #1e1818;
+    color: #fff;
+}
+.navi{
+    grid-area: navi;
+    background: #484242;
+    color: white;
+}
+.main{
+    grid-area: main;
+    background: #ccc;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: #f4f4f4;
+}
+.addtino{
+    grid-area: addtino;
+    background: #f4f4f4;
+}
+.footer{
+    grid-area: footer;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
